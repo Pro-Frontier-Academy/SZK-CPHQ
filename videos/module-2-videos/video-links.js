@@ -40,5 +40,20 @@ const MODULE_2_VIDEOS = [
     "part": 5,
     "title": "Session 2.5",
     "url": "https://drive.google.com/file/d/1eJonSAty7YR3bA2AmtNy-NREIfVUps3D/view?usp=drive_link"
-  }   
+  },
+  {
+    "part": 6,
+    "title": "Session 2.6",
+    "url": "https://drive.google.com/file/d/1VB0MPlM57w-pPo_8oIVQmf_URiSdq5ob/view?usp=drive_link"
+  },
+  {
+    "part": 7,
+    "title": "Session 2.7",
+    "url": "https://drive.google.com/file/d/1U6SrN41FwlhQFs2w-gnhqaIdXSIQyR9X/view?usp=drive_link"
+  },
+  {
+    "part": 8,
+    "title": "Session 2.8",
+    "url": "https://drive.google.com/file/d/1T_aKE6HDhQ9_bC4MXlEMlAB5Z9_nz8Rc/view?usp=drive_link"
+  }  
 ];
