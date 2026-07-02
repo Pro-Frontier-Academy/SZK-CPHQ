@@ -29,6 +29,6 @@ const MODULE_3_VIDEOS = [
   {
     "part": 3,
     "title": "Session 3.3",
-    "https://drive.google.com/file/d/1i92tyoWx8b2LOfIpMPjIfc1OE40oRESW/view?usp=drive_link"
+    "url": "https://drive.google.com/file/d/1i92tyoWx8b2LOfIpMPjIfc1OE40oRESW/view?usp=drive_link"
   } 
 ];
