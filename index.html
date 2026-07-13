@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Pro-Frontier Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#001a3a; --ink-2:#002857; --ink-3:#000d20;
+    --cyan:#5ce1e6; --cyan-soft:#a8f3f3; --teal:#006a98;
+    --muted:#9fb2c0; --line:rgba(92,225,230,.2);
+  }
+  *{box-sizing:border-box;}
+  html,body{
+    margin:0; padding:0; height:100%; width:100%;
+    font-family:'Inter',sans-serif; background:var(--ink); color:#fff;
+    overflow:hidden;
+  }
+  body{
+    display:flex; align-items:center; justify-content:center;
+    min-height:100vh; min-height:100dvh;
+    text-align:center; position:relative;
+  }
+
+  /* soft background glow, matches LMS brand */
+  .bg-glow{
+    position:fixed; inset:0; z-index:0; pointer-events:none;
+    background:
+      radial-gradient(ellipse 60% 45% at 50% 8%, rgba(92,225,230,.16), transparent 60%),
+      radial-gradient(ellipse 55% 40% at 50% 100%, rgba(0,106,152,.25), transparent 60%);
+  }
+
+  .wrap{
+    position:relative; z-index:1;
+    max-width:520px; width:100%;
+    padding:32px 28px;
+    display:flex; flex-direction:column; align-items:center; gap:18px;
+  }
+
+  .logo{ height:clamp(64px,14vw,96px); width:auto; }
+
+  .pf-iso-chip{
+    display:flex; align-items:center; gap:8px; padding:6px 12px; border-radius:999px;
+    background:linear-gradient(135deg, rgba(92,225,230,.15) 0%, rgba(255,255,255,.06) 100%);
+    border:1px solid var(--line);
+  }
+  .pf-iso-chip img{ width:20px; height:20px; }
+  .pf-iso-chip .pf-iso-text{ display:flex; flex-direction:column; line-height:1.15; text-align:left; }
+  .pf-iso-chip .pf-iso-text span:first-child{ font-size:8px; text-transform:uppercase; letter-spacing:.06em; color:var(--cyan); font-weight:700; }
+  .pf-iso-chip .pf-iso-text span:last-child{ font-size:8px; text-transform:uppercase; letter-spacing:.06em; color:rgba(255,255,255,.75); }
+
+  h1{
+    font-size:clamp(1.5rem,5vw,2.1rem); font-weight:800; line-height:1.2; margin:4px 0 0;
+  }
+  .sub{
+    color:var(--muted); font-size:clamp(.85rem,2.4vw,.98rem); line-height:1.6; max-width:420px; margin:0;
+  }
+
+  .cta{
+    margin-top:6px; display:inline-flex; align-items:center; gap:10px;
+    padding:14px 30px; border-radius:14px; text-decoration:none;
+    font-weight:700; font-size:.95rem; color:var(--ink-3);
+    background:linear-gradient(135deg,var(--cyan),var(--teal));
+    box-shadow:0 0 30px rgba(92,225,230,.4);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .cta:hover{ transform:translateY(-2px) scale(1.02); box-shadow:0 0 40px rgba(92,225,230,.55); }
+
+  .omac-badge{
+    position:fixed; top:10px; right:12px; z-index:30;
+    font-family:'Inter',sans-serif; font-size:8px; letter-spacing:.03em;
+    color:var(--muted); background:rgba(6,28,55,.6); border:1px solid var(--line);
+    border-radius:20px; padding:3px 8px; white-space:nowrap; pointer-events:none;
+  }
+
+  @media(max-height:480px){
+    .wrap{ gap:10px; padding:16px; }
+    .logo{ height:52px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="omac-badge">OMAC Web Developer</div>
+<div class="bg-glow"></div>
+
+<div class="wrap">
+  <img class="logo" src="assets/pro-frontier-logo.webp" alt="Pro-Frontier Academy" onerror="this.style.display='none'">
+
+  <div class="pf-iso-chip">
+    <img src="assets/iso-badge.webp" alt="ISO 9001:2015">
+    <div class="pf-iso-text"><span>ISO 9001:2015</span><span>Certified</span></div>
+  </div>
+
+  <h1>Welcome to Pro-Frontier Academy</h1>
+  <p class="sub">Home of the CPHQ, CPPS, and CPHRM certification tracks — globally recognized healthcare quality, patient safety, and risk management credentials, trusted by professionals and institutions worldwide.</p>
+
+  <a class="cta" href="https://pro-fronteir-lms.vercel.app/">Click here to move to LMS →</a>
+</div>
+
+</body>
+</html>
